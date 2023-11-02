@@ -3,13 +3,17 @@ import { CommonModule } from '@angular/common';
 import { InicioComponent } from './inicio/inicio.component';
 import { PeliculasComponent } from './peliculas/peliculas.component';
 import { SharedModule } from '../shared/shared.module';
+import { SeriesComponent } from './series/series.component';
+import { IngresarComponent } from './ingresar/ingresar.component';
 
 
 
 @NgModule({
   declarations: [
     InicioComponent,
-    PeliculasComponent
+    PeliculasComponent,
+    SeriesComponent,
+    IngresarComponent
   ],
   imports: [
     CommonModule,
@@ -17,7 +21,9 @@ import { SharedModule } from '../shared/shared.module';
   ],
   exports: [
     InicioComponent,
-    PeliculasComponent
+    PeliculasComponent,
+    SeriesComponent,
+    IngresarComponent
   ]
 })
 export class RoutesModule { }
