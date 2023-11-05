@@ -1,0 +1,140 @@
+.box-tittle {  
+	width: 100;
+	height: 150px;
+    color: #fff; 
+    padding: 10px 10px 10px 100px;     /*Arriba, derecha, abajo, izquierda */
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}.tittle {
+    font-size: 60px;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	color: #fff;
+	margin-top: 30px;
+}#subtittle {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: gray; 
+    font-size: 17px; 
+    margin-top: 20px;
+}
+
+.box-search{
+	width: 100%;
+	height: 75px;
+}.searcher{
+	width: 300px;
+	margin: 50px 0px 0px 100px;
+	position: relative;
+}.searcher input#search{
+	width: 300px;
+	height: 50px;
+	background: #2b303b;
+	border-style: 1px solid;
+	border-radius: 10px;
+	border-color: rgba(211, 211, 211, 0.37);
+	font-size: 10pt;
+	float: left;
+	color: #63717f;
+	padding-left: 45px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+
+	-webkit-transition: background .55s ease;
+	-moz-transition: background .55s ease;
+	-ms-transition: background .55s ease;
+	-o-transition: background .55s ease;
+	transition: background .55s ease;
+}
+.searcher input#search::-webkit-input-placeholder {
+	color: #65737e;
+}.container-searcher input#search:-moz-placeholder { /* Firefox 18- */
+	color: #65737e;  
+}.searcher input#search::-moz-placeholder {  /* Firefox 19+ */
+	color: #65737e;  
+}.searcher input#search:-ms-input-placeholder {  
+	color: #65737e;  
+}
+.searcher .icon{
+	position: absolute;
+	top: 50%;
+	margin-left: 17px;
+	margin-top: 15px;
+	z-index: 1;
+	color: #4f5b66;
+}
+.searcher input#search:hover, .searcher input#search:focus, .searcher input#search:active{
+    outline:none;
+    background: #ffffff;
+}
+
+.box-filter{
+    width: 100%;
+    height: 150px;
+}.box-filter .menu-filter{
+	margin: 50px 0px 0px 100px;
+	position: relative;
+	width: 300px;
+	height: 50px;
+	background-color: #34495e;
+	border-radius: 8px;
+	font-size: 0;
+}.box-filter .menu-filter .button-category{
+    line-height: 50px;
+    width: 100px;
+	height: 100%;
+	font-size: 15px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+}.box-filter .menu-filter .button-category .button{
+	background-color: transparent;
+    border: none;
+	line-height: 50px;
+    width: 100px;
+	height: 100%;
+	font-size: 15px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	color: white;
+	cursor: pointer;
+}.sombra {
+    background-color: #b452e1a4;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+.imginicio{
+    width: 300px;
+    height: 500px;
+}.cards{
+    border: solid black;
+    width: 300px;
+    margin: 10px;
+    border-radius: 20px;
+    background-color: antiquewhite;
+}.section-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}.tarjeta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Distribuye el espacio entre las tarjetas */
+    flex: 0 0 calc(80% - 10px); /* 33.33% significa 3 tarjetas por fila */
+    margin-bottom: 20px; /* Espacio entre las tarjetas */
+}img {
+    width: 265px;
+    height: 100%;
+    object-fit: cover;
+}h2{
+    background-color: antiquewhite;
+}p{
+    background-color: antiquewhite;
+}

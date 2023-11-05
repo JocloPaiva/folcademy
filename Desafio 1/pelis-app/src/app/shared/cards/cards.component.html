@@ -1,0 +1,32 @@
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+<div class="box-tittle">
+    <h1 class="tittle">PelisUp!</h1>
+    <p id="subtittle">Plataforma para ver peliculas y series</p>
+</div>
+
+<div class="box-search">
+    <div class="searcher">
+        <span class="icon"><i class="fa fa-search"></i></span>
+        <input type="search" id="search" placeholder="Buscar películas o series" />
+    </div>
+</div>
+
+<div class="box-filter">
+    <nav class="menu-filter">
+        <a class="button-category" [ngClass]="{'sombra': botonSeleccionado == 1}"><button class="button" (click)="seleccionarBoton(1)" (click)="setSelectedCategory('Todos')">Todos</button></a>
+        <a class="button-category" [ngClass]="{'sombra': botonSeleccionado == 2}"><button class="button" (click)="seleccionarBoton(2)" (click)="setSelectedCategory('peliculas')">Peliculas</button></a>
+        <a class="button-category" [ngClass]="{'sombra': botonSeleccionado == 3}"><button class="button" (click)="seleccionarBoton(3)" (click)="setSelectedCategory('series')">Series</button></a>
+    </nav>
+</div>
+
+<section class="section-cards">
+    <div class="cards" *ngFor="let card of arrayInfoCards">
+        <div *ngIf="selectedCategory === 'Todos' || selectedCategory === card.category">
+            <p>{{card.rating}}</p>
+            <img [src]="card.image" alt="">
+            <h2>{{card.name}}</h2>
+        </div>
+    </div>
+</section>
