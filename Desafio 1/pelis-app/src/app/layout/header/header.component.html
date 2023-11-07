@@ -4,10 +4,10 @@
     </div>
     <nav>
         <ul class="navbar">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Peliculas</a></li>
-            <li><a href="#">Series</a></li>
+            <li><a [routerLink]="['Inicio']" routerLinkActive="router-link-active" >Inicio</a></li>
+            <li><a [routerLink]="['Peliculas']" routerLinkActive="router-link-active" >Peliculas</a></li>
+            <li><a [routerLink]="['Series']" routerLinkActive="router-link-active" >Series</a></li>
         </ul>            
     </nav>
-    <a class="btn" href="#"><button>Ingresar</button></a>
+    <a class="btn" [routerLink]="['Ingresar']" routerLinkActive="router-link-active" ><button>Ingresar</button></a>
 </header>
