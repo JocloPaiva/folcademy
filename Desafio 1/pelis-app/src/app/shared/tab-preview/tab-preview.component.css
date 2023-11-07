@@ -1,0 +1,13 @@
+div {
+    color: var(--grey400);
+    margin-left: 100px;
+  }
+h3 {
+    color: grey;
+    font-weight: 600;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.text-size {
+    font-size: 16px;
+}

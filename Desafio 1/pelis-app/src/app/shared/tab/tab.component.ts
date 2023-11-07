@@ -1,5 +1,4 @@
-import { Component } from '@angular/core';
-
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 @Component({
   selector: 'app-tab',
   templateUrl: './tab.component.html',
@@ -14,5 +13,13 @@ export class TabComponent {
   }
   setSelectedCategory(category: string) {
     this.selectedCategory = category;
+  }
+
+  @Input() options: any[] = [] 
+  @Input() active: string = '' 
+  @Output() handleSelectOption = new EventEmitter<string>();
+
+  selectOption(value: any) {
+    return this.handleSelectOption.emit(value)
   }
 }

@@ -1,7 +1,5 @@
 <div class="box-filter">
     <nav class="menu-filter">
-        <a class="button-category" [ngClass]="{'sombra': botonSeleccionado == 1}"><button class="button" (click)="seleccionarBoton(1)" (click)="setSelectedCategory('Todos')">Todos</button></a>
-        <a class="button-category" [ngClass]="{'sombra': botonSeleccionado == 2}"><button class="button" (click)="seleccionarBoton(2)" (click)="setSelectedCategory('peliculas')">Peliculas</button></a>
-        <a class="button-category" [ngClass]="{'sombra': botonSeleccionado == 3}"><button class="button" (click)="seleccionarBoton(3)" (click)="setSelectedCategory('series')">Series</button></a>
+        <a class="button-category" *ngFor="let opt of options" [ngClass]="{'sombra': opt.value === active}"><button class="button" (click)="seleccionarBoton(1)" (click)="selectOption(opt)"> {{opt.label}}</button></a>
     </nav>
 </div>

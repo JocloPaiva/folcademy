@@ -5,6 +5,7 @@ import { CardsComponent } from './cards/cards.component';
 import { SearchComponent } from './search/search.component';
 import { TabComponent } from './tab/tab.component';
 import { TittleComponent } from './tittle/tittle.component';
+import { TabPreviewComponent } from './tab-preview/tab-preview.component';
 
 
 @NgModule({
@@ -14,6 +15,7 @@ import { TittleComponent } from './tittle/tittle.component';
     SearchComponent,
     TabComponent,
     TittleComponent,
+    TabPreviewComponent
   ],
   imports: [
     CommonModule
@@ -24,6 +26,7 @@ import { TittleComponent } from './tittle/tittle.component';
     SearchComponent,
     TabComponent,
     TittleComponent,
+    TabPreviewComponent
   ]
 })
 export class SharedModule { }

@@ -1,11 +1,29 @@
-<app-tittle>
-</app-tittle>
+<app-tittle></app-tittle>
+<app-search (handleSearchEvent)="searchFilm($event)"></app-search>
+<app-tab [active]="tabValue.value" (handleSelectOption)="getTabSelected($event)" [options]="optionsTab"></app-tab>
+    <div class="">
+        <div class="">
+            <div>
+                <app-tab-preview [tabLabelSelected]="tabValue.label" [size]="listFilms.length"></app-tab-preview>
+            </div>
+            <ng-container *ngIf="isLoading; else loaded">
+                <div class="">
+                    <div class="" role="status">
+                        <span class="">Cargando :p</span>
+                    </div>
+                </div>
+            </ng-container>
+            <ng-template #loaded>
+                <div class="section-cards">
+                    <ng-container *ngFor="let movie of listFilms">
+                        <app-cards [dataOfMovie]="movie"></app-cards>
+                    </ng-container>
+                    <ng-container *ngIf="!listFilms.length">
+                        <p class="">ño results mi broder</p>
+                    </ng-container>
+                </div>
+            </ng-template>
 
-<app-search>
-</app-search>
 
-<app-tab>
-</app-tab>
-
-<app-cards>
-</app-cards>
+        </div>
+    </div>

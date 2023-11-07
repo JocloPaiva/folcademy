@@ -2,6 +2,6 @@
 <div class="box-search">
     <div class="searcher">
         <span class="icon"><i class="fa fa-search"></i></span>
-        <input type="search" id="search" placeholder="Buscar películas o series" />
+        <input type="search" id="search" (search)="search($event)" (keyup)="search($event)" class="px-lg-5 px-3 rounded-3 py-3" placeholder="Buscar películas o series" />
     </div>
 </div>
