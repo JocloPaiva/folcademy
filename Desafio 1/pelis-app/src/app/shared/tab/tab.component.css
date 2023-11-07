@@ -1,0 +1,40 @@
+.box-filter{
+    width: 100%;
+    height: 150px;
+}.box-filter .menu-filter{
+	margin: 50px 0px 0px 100px;
+	position: relative;
+	width: 350px;
+	height: 55px;
+	background-color: #1218299f;
+	border-radius: 10px;
+}.box-filter .menu-filter .button-category{
+    line-height: 50px;
+    width: 115px;
+	height: 100%;
+	font-size: 15px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+}.box-filter .menu-filter .button-category .button{
+	background-color: transparent;
+    border: none;
+	line-height: 50px;
+    width: 100px;
+	height: 100%;
+	font-size: 15px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	color: white;
+	cursor: pointer;
+}.sombra {
+    background-color: #b452e1a4;
+    color: #ffffff;
+    border-radius: 10px;
+}

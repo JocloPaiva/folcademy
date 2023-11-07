@@ -5,6 +5,8 @@ import { PeliculasComponent } from './peliculas/peliculas.component';
 import { SharedModule } from '../shared/shared.module';
 import { SeriesComponent } from './series/series.component';
 import { IngresarComponent } from './ingresar/ingresar.component';
+import { LayoutModule } from '../layout/layout.module';
+
 
 
 
@@ -17,6 +19,7 @@ import { IngresarComponent } from './ingresar/ingresar.component';
   ],
   imports: [
     CommonModule,
+    LayoutModule,
     SharedModule
   ],
   exports: [
